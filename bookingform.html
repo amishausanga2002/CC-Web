@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form - Chess</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold text-center mb-8 text-blue-400">Booking Form - Chess</h1>
+        <form class="bg-gray-800 p-4 rounded-lg shadow-lg mx-auto w-full max-w-sm">
+            <!-- CB Number -->
+            <div class="mb-4">
+                <label for="cb-number" class="block text-gray-300 text-sm font-bold mb-2">CB Number</label>
+                <input type="text" id="cb-number" name="cb-number"
+                    class="w-full p-2 rounded bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Enter your CB Number">
+            </div>
+
+            <!-- Chess Board Number -->
+            <div class="mb-4">
+                <label for="chess-board" class="block text-gray-300 text-sm font-bold mb-2">Chess Board Number</label>
+                <select id="chess-board" name="chess-board"
+                    class="w-full p-2 rounded bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="1">Chess Board 1</option>
+                    <option value="2">Chess Board 2</option>
+                </select>
+            </div>
+
+            <!-- Date Selector -->
+            <div class="mb-4">
+                <label for="date" class="block text-gray-300 text-sm font-bold mb-2">Select Date</label>
+                <input type="date" id="date" name="date"
+                    class="w-full p-2 rounded bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Campus Location -->
+            <div class="mb-4">
+                <label for="campus-location" class="block text-gray-300 text-sm font-bold mb-2">Campus Location</label>
+                <select id="campus-location" name="campus-location"
+                    class="w-full p-2 rounded bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="city-campus">City Campus</option>
+                    <option value="law-school">Law School</option>
+                </select>
+            </div>
+
+            <!-- Available Slots -->
+            <div class="mb-4">
+                <label for="available-slots" class="block text-gray-300 text-sm font-bold mb-2">Available Slots</label>
+                <select id="available-slots" name="available-slots"
+                    class="w-full p-2 rounded bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="9-10am">9:00 AM - 10:00 AM</option>
+                    <option value="10-11am">10:00 AM - 11:00 AM</option>
+                    <option value="11-12pm">11:00 AM - 12:00 PM</option>
+                    <option value="1-2pm">1:00 PM - 2:00 PM</option>
+                    <option value="2-3pm">2:00 PM - 3:00 PM</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

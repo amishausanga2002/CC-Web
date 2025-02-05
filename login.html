@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Connexplore</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 flex flex-col min-h-screen">
+    <!-- Main Content -->
+    <div class="flex-grow flex items-center justify-center">
+        <div class="bg-white bg-opacity-50 p-8 rounded-lg shadow-lg w-96">
+            <!-- Login Heading -->
+            <h1 class="text-2xl font-bold text-center text-black mb-6">Login</h1>
+
+            <!-- Login Form -->
+            <form action="/submit-your-login-form" method="POST">
+                <div class="mb-6">
+                    <label for="username" class="block text-black text-sm font-bold mb-2">Username</label>
+                    <input type="text" id="username" name="username"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
+                        placeholder="Username">
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-black text-sm font-bold mb-2">Password</label>
+                    <input type="password" id="password" name="password"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-black mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                        placeholder="Password">
+                    <p class="text-xs text-black">Forgotten your username or password?</p>
+                </div>
+                <div class="mb-6">
+                    <button type="submit"
+                        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4">
+                        Log in
+                    </button>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-black mb-2">Log in using your account on:</p>
+                    <button
+                        class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded inline-flex items-center">
+                        <img src="images/Microsoft_Office_logo_(2013–2019).svg.png" alt="Microsoft 365"
+                            class="w-6 h-6 mr-2">
+                        <span>Student login: Microsoft 365</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black py-3">
+        <div class="container mx-auto px-4">
+            <!-- First Row: Social Media Icons and Partner Logos -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-4">
+                <!-- Social Media Icons -->
+                <div class="flex justify-center space-x-4 mb-4 md:mb-0">
+                    <a href="https://x.com/apiitsl?lang=en" class="text-gray-400 hover:text-gray-200" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                    <a href="https://www.facebook.com/APIITofficial" class="text-gray-400 hover:text-gray-200" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@APIITedu" class="text-gray-400 hover:text-gray-200" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/apiitsl" class="text-gray-400 hover:text-gray-200" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com/apiitsl/" class="text-gray-400 hover:text-gray-200" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                </div>
+                <!-- Partner Logos -->
+                <div class="flex justify-center space-x-4 flex-wrap">
+                    <img src="images/staf.png" alt="University of Staffordshire" class="h-24 mb-4 md:mb-0">
+                    <img src="images/APIIT.png" alt="Asian Institute of Technology" class="h-24 mb-4 md:mb-0">
+                    <img src="images/NCUK.png" alt="NCUK" class="h-24 mb-4 md:mb-0">
+                    <img src="images/Southencross.png" alt="Southern Cross University" class="h-24">
+                </div>
+            </div>
+            <!-- Second Row: Contact Information and Subscription Form -->
+            <div class="flex flex-col md:flex-row justify-around text-gray-300 text-center md:text-left">
+                <div class="mb-4 md:mb-0">
+                    <h4 class="text-white text-lg font-semibold">APIIT City Campus</h4>
+                    <address>
+                        388, Union Place,<br>
+                        Colombo 2, Sri Lanka.
+                    </address>
+                    <p>📞 +94 76 967 9448 - Chamalka</p>
+                    <p>📞 +94 76 858 3708 - Gihani</p>
+                    <p>📞 +94 77 753 5393 - Bimbisha</p>
+                </div>
+                <!-- Subscription Form -->
+                <div class="mb-4 md:mb-0">
+                    <h4 class="text-white text-lg font-semibold mb-2">Subscribe to get new offers, tournaments, etc.</h4>
+                    <form onsubmit="event.preventDefault(); this.email.value='';">
+                        <input type="email" name="email" placeholder="Your email" class="text-gray-800 px-4 py-2 rounded-l-lg focus:outline-none" required>
+                        <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-r-lg">Subscribe</button>
+                    </form>
+                </div>
+                <div>
+                    <h4 class="text-white text-lg font-semibold">APIIT Law School</h4>
+                    <address>
+                        278, 3rd Floor, Access Towers,<br>
+                        Colombo 2, Sri Lanka.
+                    </address>
+                    <p>📞 +94 76 967 9448 - Chamalka</p>
+                    <p>📞 +94 76 858 3708 - Gihani</p>
+                    <p>📞 +94 77 753 5393 - Bimbisha</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+/* Custom styles for body and html */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Ensures a consistent font is used */
+    color: #fff; /* Ensures text is white for better contrast */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/Background\ image.webp') no-repeat center center fixed;
+    background-size: cover; /* Ensures background covers the entire viewport */
+}
+
+/* Additional styles to enhance responsiveness */
+@media (max-width: 768px) {
+    /* Styles for mobile devices */
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+/* If you need additional custom media queries, add them here */
